@@ -5,11 +5,11 @@ import { assets } from '../assets/assets';
 const Sidebar = () => {
   return (
     <div className='w-[15%] min-h-screen bg-white text-white border-r p-4'>
-      <div className='flex flex-col gap-4 pt-4 text-[15px]'>
+      <div className='flex flex-col gap-4 pt-1 text-[15px] font-normal'>
         <NavLink 
           to='/add' 
           className={({ isActive }) => `
-            flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 
+            flex items-center gap-3 px-4 py-[10px] rounded-lg transition-all duration-300 
             ${isActive ? 'bg-gray-300 text-white' : 'text-gray-400 hover:bg-gray-400 hover:text-white'}
           `}
         >
@@ -20,7 +20,7 @@ const Sidebar = () => {
         <NavLink 
           to='/list' 
           className={({ isActive }) => `
-            flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 
+            flex items-center gap-3 px-4 py-[10px] rounded-lg transition-all duration-300 
             ${isActive ? 'bg-gray-400 text-white' : 'text-gray-400 hover:bg-gray-400 hover:text-white'}
           `}
         >
@@ -31,7 +31,7 @@ const Sidebar = () => {
         <NavLink 
           to='/orders' 
           className={({ isActive }) => `
-            flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 
+            flex items-center gap-3 px-4 py-[10px] rounded-lg transition-all duration-300 
             ${isActive ? 'bg-gray-400 text-white' : 'text-gray-400 hover:bg-gray-400 hover:text-white'}
           `}
         >
