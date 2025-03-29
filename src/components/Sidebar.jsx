@@ -10,7 +10,7 @@ const Sidebar = () => {
           to='/add' 
           className={({ isActive }) => `
             flex items-center gap-3 px-4 py-[10px] rounded-lg transition-all duration-300 
-            ${isActive ? 'bg-gray-300 text-white' : 'text-gray-400 hover:bg-gray-400 hover:text-white'}
+            ${isActive ? 'bg-[#3c3c43b5] text-white' : 'text-[#3c3c43b5] hover:bg-[#3c3c43b5] hover:text-white'}
           `}
         >
           <img src={assets.add_icon} alt="Add" className="w-5 text-white" />
@@ -21,7 +21,7 @@ const Sidebar = () => {
           to='/list' 
           className={({ isActive }) => `
             flex items-center gap-3 px-4 py-[10px] rounded-lg transition-all duration-300 
-            ${isActive ? 'bg-gray-400 text-white' : 'text-gray-400 hover:bg-gray-400 hover:text-white'}
+            ${isActive ? 'bg-[#3c3c43b5] text-white' : 'text-[#3c3c43b5] hover:bg-[#3c3c43b5] hover:text-white'}
           `}
         >
           <img src={assets.order_icon} alt="List" className="w-5" />
@@ -32,7 +32,7 @@ const Sidebar = () => {
           to='/orders' 
           className={({ isActive }) => `
             flex items-center gap-3 px-4 py-[10px] rounded-lg transition-all duration-300 
-            ${isActive ? 'bg-gray-400 text-white' : 'text-gray-400 hover:bg-gray-400 hover:text-white'}
+            ${isActive ? 'bg-[#3c3c43b5] text-white' : 'text-[#3c3c43b5] hover:bg-[#3c3c43b5] hover:text-white'}
           `}
         >
           <img src={assets.order_icon} alt="Orders" className="w-5" />
