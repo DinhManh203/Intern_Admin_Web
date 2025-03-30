@@ -14,7 +14,7 @@ const Login = ({ setToken }) => {
 
             if (response.data.success) {
                 setToken(response.data.token);
-                toast.success('Đăng nhập thành công!',
+                toast.success('Login successful!',
                     {
                         autoClose: 1500,
                         style: {
@@ -25,7 +25,7 @@ const Login = ({ setToken }) => {
                         icon: ({ theme, type }) => <span style={{ fontSize: "14px" }}>✅</span>
                     });
             } else {
-                toast.error(response.data.message || 'Đăng nhập thất bại. Vui lòng thử lại.',
+                toast.error(response.data.message || 'Login failed. Please try again.',
                     {
                         autoClose: 1500,
                         style: {
@@ -39,7 +39,7 @@ const Login = ({ setToken }) => {
             }
         } catch (error) {
             console.error(error);
-            toast.error(error.response?.data?.message || 'Có lỗi xảy ra. Vui lòng thử lại.', {  
+            toast.error(error.response?.data?.message || 'An error occurred. Please try again.', {  
                 autoClose: 1500, 
                 style: { fontSize: "12px", padding: "8px", minWidth: "200px" },
                 icon: ({ theme, type }) => <span style={{ fontSize: "14px" }}>⚠️</span>
