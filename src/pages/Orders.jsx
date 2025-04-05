@@ -98,7 +98,6 @@ const Orders = ({ token }) => {
           ))
         }
       </div>
-
     </div>
   )
 }
